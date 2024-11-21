@@ -1,10 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.tsx';
+import Intro from '../components/Intro.tsx';
+import FAQ from '../components/FAQ.tsx';
+import Footer from '../components/Footer.tsx';
+import MainFeatures from '../components/MainFeatures.tsx';
+import CTA from '../components/CTA.tsx';
+import Comparison from '../components/Comparison.tsx';
+import Stats from '../components/Stats.tsx';
+import Testimonials from '../components/Testimonials.tsx';
+import Process from '../components/Process.tsx';
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
         <Hero client:load/>
+        <Intro/>
+        <MainFeatures/>
+        <Comparison/>
+        <Stats/>
+        <Process/>
+        <Testimonials/>
+        <CTA/>
+        <FAQ client:load/>
+        <Footer/>
     </main>
 </Layout>
