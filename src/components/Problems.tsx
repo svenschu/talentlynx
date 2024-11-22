@@ -1,23 +1,24 @@
-import {CloudArrowUpIcon, LockClosedIcon, ServerIcon} from '@heroicons/react/20/solid'
+import {ExclamationCircleIcon} from '@heroicons/react/20/solid'
+import apples from '../images/apples.jpg'
 
 const features = [
-    {
-        name: 'Push to deploy.',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: CloudArrowUpIcon,
-    },
-    {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
-    },
-    {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
-    },
-]
+        {
+            name: 'Push to deploy.',
+            description:
+                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            icon: ExclamationCircleIcon,
+        },
+        {
+            name: 'SSL certificates.',
+            description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+            icon: ExclamationCircleIcon,
+        },
+        {
+            name: 'Database backups.',
+            description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+            icon: ExclamationCircleIcon,
+        },
+    ]
 
 export default function Example() {
     return (
@@ -52,8 +53,8 @@ export default function Example() {
                         </div>
                     </div>
                     <img
-                        alt="Product screenshot"
-                        src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png"
+                        alt="bla"
+                        src={apples.src}
                         width={2432}
                         height={1442}
                         className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"

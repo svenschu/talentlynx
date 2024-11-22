@@ -33,9 +33,7 @@ export default function Example() {
                             >
                                 Get started
                             </a>
-                            <a href="#" className="text-sm/6 font-semibold text-white">
-                                Learn more <span aria-hidden="true">→</span>
-                            </a>
+
                         </div>
                     </div>
                     <div className="relative mt-16 h-80 lg:mt-8">

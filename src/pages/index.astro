@@ -1,28 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.tsx';
-import Intro from '../components/Intro.tsx';
+import Problems from '../components/Problems.tsx';
 import FAQ from '../components/FAQ.tsx';
 import Footer from '../components/Footer.tsx';
 import MainFeatures from '../components/MainFeatures.tsx';
 import CTA from '../components/CTA.tsx';
 import Comparison from '../components/Comparison.tsx';
 import Stats from '../components/Stats.tsx';
-import Testimonials from '../components/Testimonials.tsx';
 import Process from '../components/Process.tsx';
+import Logos from '../components/Logos.tsx';
+import PS from '../components/PS.tsx';
+import {Image} from 'astro:assets';
+import apples from '../images/apples.jpg';
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
         <Hero client:load/>
-        <Intro/>
+        <Problems>
+            <!-- TODO: Image component so konfigurieren, dass für jede Bildschirmgröße passendes Format gewählt wird -->
+            <Image src={apples} alt="Apples"/>
+        </Problems>
         <MainFeatures/>
-        <Comparison/>
-        <Stats/>
         <Process/>
-        <Testimonials/>
+        <Logos/>
+        <Stats/>
+        <Comparison/>
         <CTA/>
         <FAQ client:load/>
+        <PS/>
         <Footer/>
     </main>
 </Layout>
