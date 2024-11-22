@@ -5,7 +5,7 @@ export default function Example() {
                 <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
                     <div className="mx-auto w-full max-w-xl lg:mx-0">
                         <h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                            Trusted by the most innovative teams
+                            Besuchte Messen und Konferenzen
                         </h2>
                         <p className="mt-6 text-lg/8 text-gray-300">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam

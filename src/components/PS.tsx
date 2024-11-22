@@ -43,11 +43,7 @@ export default function Example() {
                                     />
                                     <use x={86} href="#0ef284b8-28c2-426e-9442-8655d393522e" />
                                 </svg>
-                                <img
-                                    alt=""
-                                    src="https://tailwindui.com/plus/img/logos/workcation-logo-white.svg"
-                                    className="h-12 w-auto"
-                                />
+
                                 <blockquote className="mt-6 text-xl/8 font-semibold text-white">
                                     <p>
                                         “Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare
@@ -55,16 +51,16 @@ export default function Example() {
                                     </p>
                                 </blockquote>
                                 <figcaption className="mt-6 text-sm/6 text-gray-300">
-                                    <strong className="font-semibold text-white">Judith Rogers,</strong> CEO at Workcation
+                                    <strong className="font-semibold text-white">Max Mustermann,</strong> CEO at Company
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
                     <div>
                         <div className="text-base/7 text-gray-300 lg:max-w-lg">
-                            <p className="text-base/7 font-semibold text-indigo-600">Company values</p>
+                            <p className="text-base/7 font-semibold text-indigo-600">Unsere Mission</p>
                             <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-100 sm:text-5xl">
-                                On a mission to empower remote teams
+                                Die besten Leute finden
                             </h1>
                             <div className="max-w-xl">
                                 <p className="mt-6">

@@ -1,0 +1,57 @@
+const steps = [
+    { id: '01', name: 'Job details' },
+    { id: '02', name: 'Application form' },
+    { id: '03', name: 'Preview' },
+];
+
+export default function Example() {
+    return (
+        <section
+            aria-label="Steps"
+            className="rounded-md border border-gray-700 bg-gray-900"
+        >
+            <ol
+                role="list"
+                className="divide-y divide-gray-700 md:flex md:divide-y-0"
+            >
+                {steps.map((step, stepIdx) => (
+                    <li key={step.name} className="relative md:flex md:flex-1">
+                        <div className="flex items-center px-6 py-4 text-sm font-medium">
+                            {/* Number inside the circle */}
+                            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-600 text-white font-semibold">
+                                {stepIdx + 1}
+                            </span>
+                            <span className="ml-4 text-sm font-medium text-gray-200">
+                                {step.name}
+                            </span>
+                        </div>
+
+                        {stepIdx !== steps.length - 1 ? (
+                            <>
+                                {/* Arrow separator for large screens */}
+                                <div
+                                    aria-hidden="true"
+                                    className="absolute right-0 top-0 hidden h-full w-5 md:block"
+                                >
+                                    <svg
+                                        fill="none"
+                                        viewBox="0 0 22 80"
+                                        preserveAspectRatio="none"
+                                        className="h-full w-full text-gray-700"
+                                    >
+                                        <path
+                                            d="M0 -2L20 40L0 82"
+                                            stroke="currentColor"
+                                            vectorEffect="non-scaling-stroke"
+                                            strokeLinejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </>
+                        ) : null}
+                    </li>
+                ))}
+            </ol>
+        </section>
+    );
+}

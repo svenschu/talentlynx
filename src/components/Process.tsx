@@ -37,7 +37,7 @@ export default function Example() {
                         <div className="lg:max-w-lg">
                             <p className="text-base/7 font-semibold text-indigo-600">Deploy faster</p>
                             <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                                A better workflow
+                                A better workflow (CTA in diesem Bereich)
                             </h1>
                             <p className="mt-6 text-xl/8 text-gray-700">
                                 Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi,
@@ -51,7 +51,7 @@ export default function Example() {
                     className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                     <img
                         alt=""
-                        src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png"
+                        src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                     />
                 </div>

@@ -3,9 +3,44 @@ import {MinusSmallIcon, PlusSmallIcon} from '@heroicons/react/24/outline'
 
 const faqs = [
     {
-        question: "What's the best thing about Switzerland?",
+        question: "Lorem ipsum dolor sit amet?",
         answer:
-            "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet?",
+        answer:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet?",
+        answer:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet?",
+        answer:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet?",
+        answer:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet?",
+        answer:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet?",
+        answer:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet?",
+        answer:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     },
     // More questions...
 ]
@@ -16,7 +51,7 @@ export default function Example() {
             <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
                 <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
                     <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                        Frequently asked questions
+                        Häufig gestellte Fragen
                     </h2>
                     <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
                         {faqs.map((faq) => (
