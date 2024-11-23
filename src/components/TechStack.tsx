@@ -1,10 +1,3 @@
-const stats = [
-    { label: 'Founded', value: '2021' },
-    { label: 'Employees', value: '37' },
-    { label: 'Countries', value: '12' },
-    { label: 'Raised', value: '$25M' },
-];
-
 export default function Example() {
     return (
         <div className="bg-white py-24 sm:py-32">
@@ -22,17 +15,18 @@ export default function Example() {
                     {/* Inhalt auf der rechten Seite */}
                     <div>
                         <div className="text-base/7 text-gray-700 lg:max-w-lg">
-                            <p className="text-base/7 font-semibold text-indigo-600">Company values</p>
+                            {/* Akzentfarbe für Titel */}
+                            <p className="text-base/7 font-semibold text-brand-aquamarine-500">Company values</p>
                             <h1 className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                                 On a mission to empower remote teams
                             </h1>
                             <div className="max-w-xl">
-                                <p className="mt-6">
+                                <p className="mt-6 text-gray-600">
                                     Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
                                     vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
                                     erat velit.
                                 </p>
-                                <p className="mt-8">
+                                <p className="mt-8 text-gray-600">
                                     Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie
                                     auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices
                                     hac adipiscing egestas.

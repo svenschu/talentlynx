@@ -1,4 +1,9 @@
-import { ChatBubbleOvalLeftEllipsisIcon, HeartIcon, PencilSquareIcon, TrashIcon } from '@heroicons/react/24/outline'
+import {
+    ChatBubbleOvalLeftEllipsisIcon,
+    HeartIcon,
+    PencilSquareIcon,
+    TrashIcon,
+} from '@heroicons/react/24/outline'
 
 const features = [
     {
@@ -32,7 +37,7 @@ export default function Example() {
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                    <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                    <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                         Stay on top of customer support
                     </h2>
                 </div>
@@ -42,10 +47,16 @@ export default function Example() {
                             key={feature.name}
                             className="flex flex-col rounded-2xl bg-gray-50 p-8 shadow-sm hover:shadow-lg transition-shadow"
                         >
-                            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-indigo-600">
-                                <feature.icon aria-hidden="true" className="h-6 w-6 text-white" />
+                            {/* Icon mit Brand-Farben */}
+                            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-brand-aquamarine-500">
+                                <feature.icon
+                                    aria-hidden="true"
+                                    className="h-6 w-6 text-white"
+                                />
                             </div>
+                            {/* Titel */}
                             <h3 className="text-lg font-semibold text-gray-900">{feature.name}</h3>
+                            {/* Beschreibung */}
                             <p className="mt-2 text-base text-gray-600">{feature.description}</p>
                         </div>
                     ))}
@@ -54,4 +65,3 @@ export default function Example() {
         </div>
     )
 }
-
