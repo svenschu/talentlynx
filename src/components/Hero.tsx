@@ -117,9 +117,9 @@ export default function Example() {
                             Finde in 30 Tagen deinen<br/>
                             <Typewriter className="font-mono text-brand-coral-500 block mt-4"/>
                         </h1>
-                        <p className="mt-8 text-lg font-medium text-gray-400 sm:text-xl max-w-2xl">
+                        <p className="mt-8 text-lg font-medium text-gray-300 sm:text-xl max-w-2xl">
                             Unser Recruiting-System unterstützt über 150 Unternehmen dabei, erstklassige Mitarbeiter
-                            ohne Risiko einzustellen und langfristig zu halten. Und das mit positivem ROI ab Tag 1.
+                            ohne Risiko einzustellen und langfristig zu halten. <span className="underline">Und das mit positivem ROI ab Tag 1.</span>
                         </p>
                         <div className="mt-10 flex items-center gap-x-6">
                             <CTAButton/>
