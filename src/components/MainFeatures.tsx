@@ -1,10 +1,10 @@
-import Typewriter from "./Typewriter.tsx";
-
 export default function Example() {
     return (
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-                <h2 className="text-base/7 font-semibold font-mono text-brand-aquamarine-500">Deploy faster</h2>
+                <h2 className="text-base/7 font-semibold font-mono text-brand-aquamarine-500">
+                    Darum sind wir anders
+                </h2>
                 <p className="mt-2 max-w-lg text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                     Nur eine weitere Personalvermittlung?
                 </p>
@@ -20,13 +20,12 @@ export default function Example() {
                                 className="h-80 object-cover object-left"
                             />
                             <div className="p-10 pt-4">
-                                <h3 className="text-sm/4 font-semibold text-brand-aquamarine-500">Performance</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">Lightning-fast
-                                    builds</p>
-                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla
-                                    efficitur, maximus
-                                    egestas sem pellentesque.
+                                <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Dein
+                                    strategischer Partner</h3>
+                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                    Wir unterstützen dich bei jedem Schritt: von der Beratung bis zur langfristigen
+                                    Betreuung nach der Einstellung. Gemeinsam optimieren wir Prozesse und bauen ein
+                                    starkes Tech-Team für deinen Erfolg.
                                 </p>
                             </div>
                         </div>
@@ -43,12 +42,11 @@ export default function Example() {
                                 className="h-80 object-cover object-left lg:object-right"
                             />
                             <div className="p-10 pt-4">
-                                <h3 className="text-sm/4 font-semibold text-brand-aquamarine-500">Releases</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">Push to deploy</p>
-                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                                    Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus massa, laoreet dapibus
-                                    ex elit vitae
-                                    odio.
+                                <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Kein Risiko,
+                                    nur Erfolg</h3>
+                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                    Unsere 0 % Risiko-Garantie schützt dich vor teuren Fehlbesetzungen. Profitiere von
+                                    IT-Fachkräften, die direkt einen Mehrwert schaffen.
                                 </p>
                             </div>
                         </div>
@@ -65,11 +63,11 @@ export default function Example() {
                                 className="h-80 object-cover object-left"
                             />
                             <div className="p-10 pt-4">
-                                <h3 className="text-sm/4 font-semibold text-brand-aquamarine-500">Speed</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">Built for power
-                                    users</p>
-                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                                    Sed congue eros non finibus molestie. Vestibulum euismod augue.
+                                <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Vorselektierte
+                                    Kandidaten</h3>
+                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                    Nur die besten Talente kommen in die Auswahl – nach strenger Prüfung. Spare Zeit und
+                                    Ressourcen mit unserem bewährten 15-Punkte-System.
                                 </p>
                             </div>
                         </div>
@@ -86,11 +84,11 @@ export default function Example() {
                                 className="h-80 object-cover"
                             />
                             <div className="p-10 pt-4">
-                                <h3 className="text-sm/4 font-semibold text-brand-aquamarine-500">Integrations</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">Connect your
-                                    favorite tools</p>
-                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                                    Maecenas at augue sed elit dictum vulputate, in nisi aliquam maximus arcu.
+                                <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Netzwerk mit
+                                    persönlichem Kontakt</h3>
+                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                    Mit 5000+ IT-Spezialisten aus unserem Face-to-Face-Netzwerk. Wir nutzen persönliche
+                                    Kontakte, um die besten Talente zu finden.
                                 </p>
                             </div>
                         </div>
@@ -107,11 +105,11 @@ export default function Example() {
                                 className="h-80 object-cover"
                             />
                             <div className="p-10 pt-4">
-                                <h3 className="text-sm/4 font-semibold text-brand-aquamarine-500">Network</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">Globally
-                                    distributed CDN</p>
-                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                                    Aenean vulputate justo commodo auctor vehicula in malesuada semper.
+                                <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Technologie
+                                    trifft Headhunting</h3>
+                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                    KI-gestützte Tools und persönliches Headhunting – die perfekte Kombination. Unsere
+                                    smarte Strategie zieht täglich neue Talente an und hält uns der Konkurrenz voraus.
                                 </p>
                             </div>
                         </div>
