@@ -1,3 +1,5 @@
+import CTAButton from "./CTAButton.tsx";
+
 export default function Example() {
     return (
         <div className="bg-gray-900 py-24 sm:py-32">
@@ -14,12 +16,7 @@ export default function Example() {
                             scelerisque amet ullamcorper eu enim et fermentum, augue.
                         </p>
                         <div className="mt-8 flex items-center gap-x-6">
-                            <a
-                                href="#"
-                                className="rounded-md bg-brand-aquamarine-500 px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-brand-aquamarine-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-aquamarine-500"
-                            >
-                                Create account
-                            </a>
+                            <CTAButton/>
                         </div>
                     </div>
                     {/* Logos */}

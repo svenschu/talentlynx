@@ -8,7 +8,7 @@ export default function Example() {
                     <div className="relative overflow-hidden rounded-3xl shadow-2xl lg:max-w-lg">
                         <img
                             alt="Company related visual"
-                            src="https://images.unsplash.com/photo-1630569267625-157f8f9d1a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80"
+                            src="/src/assets/tech-stack.jpg"
                             className="h-full w-full object-cover"
                         />
                     </div>
@@ -16,29 +16,22 @@ export default function Example() {
                     {/* Inhalt auf der rechten Seite */}
                     <div>
                         <div className="text-base/7 text-gray-700 lg:max-w-lg">
-                            {/* Akzentfarbe für Titel */}
-                            <p className="text-base/7 font-semibold text-brand-aquamarine-500">Company values</p>
+                            <p className="text-base/7 font-semibold font-mono text-brand-aquamarine-500">Technologische
+                                Exzellenz</p>
                             <h1 className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                                On a mission to empower remote teams
+                                Entwickler, die Innovation vorantreiben
                             </h1>
                             <div className="max-w-xl">
                                 <p className="mt-6 text-gray-600">
-                                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                                    mauris semper sed amet
-                                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra
-                                    tellus varius sit neque
-                                    erat velit.
-                                </p>
-                                <p className="mt-8 text-gray-600">
-                                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id
-                                    blandit molestie
-                                    auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius
-                                    vulputate et ultrices
-                                    hac adipiscing egestas.
+                                    TalentLynx vermittelt Entwickler, die mit modernsten Technologien arbeiten. Egal ob
+                                    Frontend, Backend oder Fullstack – unsere Kandidaten beherrschen die Werkzeuge, um
+                                    innovative und skalierbare Softwarelösungen zu schaffen.
                                 </p>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>

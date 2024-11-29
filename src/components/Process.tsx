@@ -1,8 +1,10 @@
 import {
-    CloudArrowUpIcon,
-    LockClosedIcon,
-    ServerIcon,
-} from '@heroicons/react/20/solid'
+    AcademicCapIcon,
+    CheckCircleIcon,
+    AdjustmentsHorizontalIcon,
+    SparklesIcon,
+} from '@heroicons/react/20/solid';
+import CTAButton from "./CTAButton.tsx";
 
 export default function Example() {
     return (
@@ -38,8 +40,10 @@ export default function Example() {
                     />
                 </svg>
             </div>
+
             <div
                 className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+
                 <div
                     className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                     <div className="lg:pr-4">
@@ -55,9 +59,58 @@ export default function Example() {
                                 finden. Nur die Top 25 % der Kandidaten bestehen unseren Prozess – für höchste Qualität
                                 und langfristige Erfolge.
                             </p>
+
+                            {/* Prozessboxen */}
+                            <div className="mt-10 space-y-6">
+                                <div
+                                    className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
+                                    <AcademicCapIcon className="h-10 w-10 text-brand-primary-500 flex-none"/>
+                                    <div className="ml-4">
+                                        <h3 className="text-lg font-semibold text-gray-900">1. Talente entdecken</h3>
+                                        <p className="mt-2 text-base text-gray-700">
+                                            Wir finden Entwickler auf Plattformen wie LinkedIn, GitHub, Stack Overflow,
+                                            Messen und über Partnernetzwerke.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
+                                    <SparklesIcon className="h-10 w-10 text-brand-aquamarine-500 flex-none"/>
+                                    <div className="ml-4">
+                                        <h3 className="text-lg font-semibold text-gray-900">2. Vorauswahl mit KI</h3>
+                                        <p className="mt-2 text-base text-gray-700">
+                                            Unsere KI analysiert Marktdaten, identifiziert Talente und erstellt
+                                            datengetriebene Empfehlungen.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
+                                    <AdjustmentsHorizontalIcon className="h-10 w-10 text-brand-coral-500 flex-none"/>
+                                    <div className="ml-4">
+                                        <h3 className="text-lg font-semibold text-gray-900">3. 15-Punkte-Filter</h3>
+                                        <p className="mt-2 text-base text-gray-700">
+                                            Nur die Top 25 % bestehen unseren umfassenden Filter und qualifizieren sich
+                                            für die nächste Phase.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
+                                    <CheckCircleIcon className="h-10 w-10 text-brand-primary-500 flex-none"/>
+                                    <div className="ml-4">
+                                        <h3 className="text-lg font-semibold text-gray-900">4. Vorstellung</h3>
+                                        <p className="mt-2 text-base text-gray-700">
+                                            Wir präsentieren sorgfältig ausgewählte, motivierte und vorbereitete
+                                            Kandidaten für Ihre Position.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div
                     className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                     <video
