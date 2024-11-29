@@ -1,34 +1,34 @@
 import {
-    ChatBubbleOvalLeftEllipsisIcon,
-    HeartIcon,
-    PencilSquareIcon,
-    TrashIcon,
-} from '@heroicons/react/24/outline'
+    UserIcon,
+    MagnifyingGlassIcon,
+    ArrowTrendingUpIcon,
+    ExclamationCircleIcon,
+} from '@heroicons/react/24/solid'
 
 const features = [
     {
-        name: 'Spam report',
+        name: 'Steigende Einstellungskosten',
         description:
-            'Autem reprehenderit aut debitis ut. Officiis harum omnis placeat blanditiis delectus sint vel et voluptatum.',
-        icon: TrashIcon,
+            'Hohe Kosten machen es wichtiger, Fehlbesetzungen zu vermeiden.',
+        icon: ArrowTrendingUpIcon,
     },
     {
-        name: 'Compose in markdown',
+        name: 'Top-Entwickler finden',
         description:
-            'Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat. Voluptatem officiis necessitatibus.',
-        icon: PencilSquareIcon,
+            'Die besten Entwickler sind schwer erreichbar, vor allem passive Kandidaten.',
+        icon: MagnifyingGlassIcon,
     },
     {
-        name: 'Email commenting',
+        name: 'Talente halten',
         description:
-            'Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. Ut et sunt id officiis vitae perspiciatis.',
-        icon: ChatBubbleOvalLeftEllipsisIcon,
+            'Es wird immer schwieriger, gute Entwickler langfristig im Team zu halten.',
+        icon: UserIcon,
     },
     {
-        name: 'Customer connections',
+        name: 'Verzögerte Projekte',
         description:
-            'Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure praesentium facilis.',
-        icon: HeartIcon,
+            'Unbesetzte Stellen bremsen Projekte und gefährden den Erfolg.',
+        icon: ExclamationCircleIcon,
     },
 ]
 
@@ -36,12 +36,16 @@ export default function Example() {
     return (
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+                <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                        Stay on top of customer support
+                        Kennst du diese Probleme?
                     </h2>
+                    <p className="mt-4 text-lg text-gray-600">
+                        Nach Gesprächen mit über 400 Entscheidern aus dem Technologie-Sektor haben wir
+                        vier zentrale Problembereiche identifiziert, die viele Unternehmen teilen.
+                    </p>
                 </div>
-                <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4 lg:gap-8">
+                <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-4 lg:gap-8">
                     {features.map((feature) => (
                         <div
                             key={feature.name}

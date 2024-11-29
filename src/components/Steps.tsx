@@ -18,10 +18,10 @@ export default function Example() {
                     <li key={step.name} className="relative md:flex md:flex-1">
                         <div className="flex items-center px-6 py-4 text-sm font-medium">
                             {/* Number inside the circle */}
-                            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-aquamarine-500 text-gray-900 font-semibold">
+                            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-aquamarine-500 hover:bg-brand-coral-500 font-semibold">
                                 {stepIdx + 1}
                             </span>
-                            <span className="ml-4 text-sm font-medium text-gray-200">
+                            <span className="ml-4 text-sm font-medium text-gray-200 hover:underline">
                                 {step.name}
                             </span>
                         </div>

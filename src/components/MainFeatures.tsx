@@ -22,7 +22,7 @@ export default function Example() {
                             <div className="p-10 pt-4">
                                 <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Dein
                                     strategischer Partner</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                <p className="mt-4 text-lg font-medium tracking-tight text-gray-700">
                                     Wir unterstützen dich bei jedem Schritt: von der Beratung bis zur langfristigen
                                     Betreuung nach der Einstellung. Gemeinsam optimieren wir Prozesse und bauen ein
                                     starkes Tech-Team für deinen Erfolg.
@@ -44,7 +44,7 @@ export default function Example() {
                             <div className="p-10 pt-4">
                                 <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Kein Risiko,
                                     nur Erfolg</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                <p className="mt-4 text-lg font-medium tracking-tight text-gray-700">
                                     Unsere 0 % Risiko-Garantie schützt dich vor teuren Fehlbesetzungen. Profitiere von
                                     IT-Fachkräften, die direkt einen Mehrwert schaffen.
                                 </p>
@@ -65,7 +65,7 @@ export default function Example() {
                             <div className="p-10 pt-4">
                                 <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Vorselektierte
                                     Kandidaten</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                <p className="mt-4 text-lg font-medium tracking-tight text-gray-700">
                                     Nur die besten Talente kommen in die Auswahl – nach strenger Prüfung. Spare Zeit und
                                     Ressourcen mit unserem bewährten 15-Punkte-System.
                                 </p>
@@ -86,7 +86,7 @@ export default function Example() {
                             <div className="p-10 pt-4">
                                 <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Netzwerk mit
                                     persönlichem Kontakt</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                <p className="mt-4 text-lg font-medium tracking-tight text-gray-700">
                                     Mit 5000+ IT-Spezialisten aus unserem Face-to-Face-Netzwerk. Wir nutzen persönliche
                                     Kontakte, um die besten Talente zu finden.
                                 </p>
@@ -107,7 +107,7 @@ export default function Example() {
                             <div className="p-10 pt-4">
                                 <h3 className="text-sm/4 font-semibold font-mono text-brand-aquamarine-500">Technologie
                                     trifft Headhunting</h3>
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-900">
+                                <p className="mt-4 text-lg font-medium tracking-tight text-gray-700">
                                     KI-gestützte Tools und persönliches Headhunting – die perfekte Kombination. Unsere
                                     smarte Strategie zieht täglich neue Talente an und hält uns der Konkurrenz voraus.
                                 </p>
