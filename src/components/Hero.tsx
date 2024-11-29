@@ -114,8 +114,8 @@ export default function Example() {
                     className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
                     <div className="mx-auto max-w-4xl lg:mx-0 lg:flex-auto">
                         <h1 className="mt-10 text-5xl font-semibold tracking-tight text-brand-primary-50 sm:text-7xl">
-                            <Typewriter className="font-mono text-brand-coral-500 block mt-4"/><br/>
-                            in 30 Tagen einstellen mit Garantie
+                            <Typewriter className="font-mono text-brand-coral-500 block"/><br/>
+                            in 30 Tagen einstellen ohne Risiko
                         </h1>
                         <p className="mt-8 text-lg font-medium text-gray-300 sm:text-xl max-w-2xl">
                             Unser Recruiting-System unterstützt über 150 Unternehmen dabei, erstklassige Mitarbeiter
