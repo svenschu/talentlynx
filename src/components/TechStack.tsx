@@ -8,7 +8,7 @@ export default function Example() {
                     <div className="relative overflow-hidden rounded-3xl shadow-2xl lg:max-w-lg">
                         <img
                             alt="Company related visual"
-                            src="/src/assets/tech-stack.jpg"
+                            src="/tech-stack.jpg"
                             className="h-full w-full object-cover"
                         />
                     </div>
