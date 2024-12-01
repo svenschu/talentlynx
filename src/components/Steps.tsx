@@ -1,10 +1,10 @@
-const steps = [
-    { id: '01', name: 'Job details' },
-    { id: '02', name: 'Application form' },
-    { id: '03', name: 'Preview' },
+const defaultSteps = [
+    {id: '01', name: 'Beratungstermin'},
+    {id: '02', name: 'Anforderungen festlegen'},
+    {id: '03', name: 'Neue Fachkraft in 30 Tagen'},
 ];
 
-export default function Example() {
+export default function Steps({steps = defaultSteps}: { steps?: { id: string; name: string }[] }) {
     return (
         <section
             aria-label="Steps"
@@ -18,7 +18,8 @@ export default function Example() {
                     <li key={step.name} className="relative md:flex md:flex-1">
                         <div className="flex items-center px-6 py-4 text-sm font-medium">
                             {/* Number inside the circle */}
-                            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-aquamarine-500 hover:bg-brand-coral-500 font-semibold">
+                            <span
+                                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-aquamarine-500 hover:bg-brand-coral-500 font-semibold">
                                 {stepIdx + 1}
                             </span>
                             <span className="ml-4 text-sm font-medium text-gray-200 hover:underline">
