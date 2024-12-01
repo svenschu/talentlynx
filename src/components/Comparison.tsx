@@ -1,35 +1,51 @@
-import { CheckIcon } from '@heroicons/react/20/solid'
+import { CheckIcon, XMarkIcon } from '@heroicons/react/20/solid';
 
 const tiers = [
     {
-        name: 'Tagline',
+        name: 'Typische Konkurrenz',
         id: 'tier-hobby',
         href: '#',
         priceMonthly: 'Andere',
-        description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        features: ['Lorem ipsum', 'Lorem ipsum', 'Lorem ipsum', 'Lorem ipsum'],
+        description: "Einmalbesetzung, CV-Spamming und hohe Kosten. Risiko und mangelnde Transparenz gehören zum Standard.",
+        features: [
+            { text: 'Keine Risikominimierung & Fehlbesetzung', success: false },
+            { text: 'Einmalbesetzung und kein langfristiges Engagement', success: false },
+            { text: 'CV-Spamming & unpassende Kandidaten', success: false },
+            { text: 'Schlecht vorbereitete Kandidaten', success: false },
+            { text: 'Intransparente Preise und Black Box', success: false },
+            { text: 'Abhängig von LinkedIn & InMails', success: false },
+        ],
         featured: false,
     },
     {
-        name: 'Tagline',
+        name: 'Unsere Lösung: TalentLynx',
         id: 'tier-enterprise',
         href: '#',
-        priceMonthly: 'Wir',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        features: ['Lorem ipsum', 'Lorem ipsum', 'Lorem ipsum', 'Lorem ipsum', 'Lorem ipsum'],
+        priceMonthly: 'TalentLynx',
+        description: "Langfristige Bindung, Präzision und Transparenz. Wir finden nicht nur Kandidaten, sondern die richtigen Talente.",
+        features: [
+            { text: '0 % Risiko Garantie & langfristige Bindung', success: true },
+            { text: 'Precision Hiring: Nur Profile mit über 75 % Bewertung', success: true },
+            { text: 'Kandidaten sind motiviert und vorbereitet', success: true },
+            { text: '100 % Transparenz mit Einblick in unsere Prozesse', success: true },
+            { text: 'Faire und transparente Preise mit Garantie', success: true },
+            { text: 'Multichannel-Ansatz und KI-gestütztes Recruiting', success: true },
+        ],
         featured: true,
     },
-]
+];
 
 function classNames(...classes: any[]) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(' ');
 }
 
 export default function Example() {
     return (
         <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-            <div aria-hidden="true"
-                 className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl">
+            <div
+                aria-hidden="true"
+                className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
+            >
                 <div
                     style={{
                         clipPath:
@@ -39,16 +55,17 @@ export default function Example() {
                 />
             </div>
             <div className="mx-auto max-w-4xl text-center">
-                <h2 className="text-base/7 font-semibold text-brand-aquamarine-500">Pricing</h2>
+                <h2 className="text-base/7 font-semibold text-brand-aquamarine-500">Recruiting im Vergleich</h2>
                 <p className="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
-                    Us vs. Them
+                    TalentLynx vs. Andere
                 </p>
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600 sm:text-xl/8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                Erfahre, warum TalentLynx die bessere Wahl ist, um die richtigen Talente für dein Unternehmen zu finden.
             </p>
             <div
-                className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
+                className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-y-6 sm:mt-20 lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8"
+            >
                 {tiers.map((tier, tierIdx) => (
                     <div
                         key={tier.id}
@@ -56,36 +73,34 @@ export default function Example() {
                             tier.featured
                                 ? 'relative bg-brand-primary-900 text-white shadow-2xl'
                                 : 'bg-white text-gray-900 ring-1 ring-gray-200',
-                            tier.featured
-                                ? ''
-                                : tierIdx === 0
-                                    ? 'rounded-t-3xl sm:rounded-b-none lg:rounded-bl-3xl lg:rounded-tr-none'
-                                    : 'sm:rounded-t-none lg:rounded-bl-none lg:rounded-tr-3xl',
-                            'rounded-3xl p-8 sm:p-10',
+                            'rounded-3xl p-8 sm:p-10', // Alle Ecken abgerundet
                         )}
                     >
                         <h3
                             id={tier.id}
                             className={classNames(
                                 tier.featured ? 'text-brand-aquamarine-500' : 'text-brand-primary-700',
-                                'text-base/7 font-semibold'
+                                'text-base/7 font-semibold',
                             )}
                         >
                             {tier.name}
                         </h3>
                         <p className="mt-4 flex items-baseline gap-x-2">
-              <span
-                  className={classNames(
-                      tier.featured ? 'text-white' : 'text-gray-900',
-                      'text-5xl font-semibold tracking-tight',
-                  )}
-              >
-                {tier.priceMonthly}
-              </span>
                             <span
-                                className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-600', 'text-base')}></span>
+                                className={classNames(
+                                    tier.featured ? 'text-white' : 'text-gray-900',
+                                    'text-5xl font-semibold tracking-tight',
+                                )}
+                            >
+                                {tier.priceMonthly}
+                            </span>
                         </p>
-                        <p className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-700', 'mt-6 text-base/7')}>
+                        <p
+                            className={classNames(
+                                tier.featured ? 'text-gray-300' : 'text-gray-700',
+                                'mt-6 text-base/7',
+                            )}
+                        >
                             {tier.description}
                         </p>
                         <ul
@@ -95,18 +110,20 @@ export default function Example() {
                                 'mt-8 space-y-3 text-sm/6 sm:mt-10',
                             )}
                         >
-                            {tier.features.map((feature) => (
-                                <li key={feature} className="flex gap-x-3">
-                                    <CheckIcon
-                                        aria-hidden="true"
-                                        className={classNames(
-                                            tier.featured
-                                                ? 'text-brand-aquamarine-500'
-                                                : 'text-brand-primary-700',
-                                            'h-6 w-5 flex-none'
-                                        )}
-                                    />
-                                    {feature}
+                            {tier.features.map(({ text, success }) => (
+                                <li key={text} className="flex gap-x-3">
+                                    {success ? (
+                                        <CheckIcon
+                                            aria-hidden="true"
+                                            className="h-6 w-5 flex-none text-brand-aquamarine-500"
+                                        />
+                                    ) : (
+                                        <XMarkIcon
+                                            aria-hidden="true"
+                                            className="h-6 w-5 flex-none text-red-500"
+                                        />
+                                    )}
+                                    {text}
                                 </li>
                             ))}
                         </ul>
@@ -114,5 +131,5 @@ export default function Example() {
                 ))}
             </div>
         </div>
-    )
+    );
 }

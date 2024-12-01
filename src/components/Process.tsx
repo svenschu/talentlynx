@@ -63,7 +63,7 @@ export default function Example() {
                             {/* Prozessboxen */}
                             <div className="mt-10 space-y-6">
                                 <div
-                                    className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
+                                    className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
                                     <AcademicCapIcon className="h-10 w-10 text-brand-primary-500 flex-none"/>
                                     <div className="ml-4">
                                         <h3 className="text-lg font-semibold text-gray-900">1. Talente entdecken</h3>
@@ -74,7 +74,7 @@ export default function Example() {
                                     </div>
                                 </div>
                                 <div
-                                    className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
+                                    className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
                                     <SparklesIcon className="h-10 w-10 text-brand-aquamarine-500 flex-none"/>
                                     <div className="ml-4">
                                         <h3 className="text-lg font-semibold text-gray-900">2. Vorauswahl mit KI</h3>
@@ -85,7 +85,7 @@ export default function Example() {
                                     </div>
                                 </div>
                                 <div
-                                    className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
+                                    className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
                                     <AdjustmentsHorizontalIcon className="h-10 w-10 text-brand-coral-500 flex-none"/>
                                     <div className="ml-4">
                                         <h3 className="text-lg font-semibold text-gray-900">3. 15-Punkte-Filter</h3>
@@ -96,7 +96,7 @@ export default function Example() {
                                     </div>
                                 </div>
                                 <div
-                                    className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
+                                    className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex items-start h-full hover:shadow-md transition-shadow">
                                     <CheckCircleIcon className="h-10 w-10 text-brand-primary-500 flex-none"/>
                                     <div className="ml-4">
                                         <h3 className="text-lg font-semibold text-gray-900">4. Vorstellung</h3>
@@ -115,7 +115,7 @@ export default function Example() {
                     className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                     <video
                         src="/talentlynx-process-animation.mp4"
-                        className="w-full max-w-full rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
+                        className="w-full max-w-full rounded-2xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
                         autoPlay
                         loop
                         muted

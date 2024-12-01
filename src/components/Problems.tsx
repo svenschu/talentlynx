@@ -49,7 +49,7 @@ export default function Example() {
                     {features.map((feature) => (
                         <div
                             key={feature.name}
-                            className="flex flex-col rounded-2xl bg-gray-50 p-8 shadow-sm hover:shadow-lg transition-shadow"
+                            className="flex flex-col border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow"
                         >
                             {/* Icon mit Brand-Farben */}
                             <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-brand-aquamarine-500">

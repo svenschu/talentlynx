@@ -20,52 +20,46 @@ export default function Example() {
                         </div>
                     </div>
                     {/* Logos */}
-                    <div className="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-                        <img
-                            alt="Tuple"
-                            src="https://tailwindui.com/plus/img/logos/tuple-logo-white.svg"
-                            width={105}
-                            height={48}
-                            className="max-h-12 w-full object-contain object-left"
-                        />
-                        <img
-                            alt="Reform"
-                            src="https://tailwindui.com/plus/img/logos/reform-logo-white.svg"
-                            width={104}
-                            height={48}
-                            className="max-h-12 w-full object-contain object-left"
-                        />
-                        <img
-                            alt="SavvyCal"
-                            src="https://tailwindui.com/plus/img/logos/savvycal-logo-white.svg"
-                            width={140}
-                            height={48}
-                            className="max-h-12 w-full object-contain object-left"
-                        />
-                        <img
-                            alt="Laravel"
-                            src="https://tailwindui.com/plus/img/logos/laravel-logo-white.svg"
-                            width={136}
-                            height={48}
-                            className="max-h-12 w-full object-contain object-left"
-                        />
-                        <img
-                            alt="Transistor"
-                            src="https://tailwindui.com/plus/img/logos/transistor-logo-white.svg"
-                            width={158}
-                            height={48}
-                            className="max-h-12 w-full object-contain object-left"
-                        />
-                        <img
-                            alt="Statamic"
-                            src="https://tailwindui.com/plus/img/logos/statamic-logo-white.svg"
-                            width={147}
-                            height={48}
-                            className="max-h-12 w-full object-contain object-left"
-                        />
+                    <div
+                        className="mx-auto grid w-full max-w-xl grid-cols-2 gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
+                        <div className="flex justify-center">
+                            <img
+                                alt="Tuple"
+                                src="/src/assets/aws-summit-logo.png"
+                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
+                            />
+                        </div>
+                        <div className="flex justify-center">
+                            <img
+                                alt="Reform"
+                                src="/src/assets/google-cloud-summit-logo.png"
+                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
+                            />
+                        </div>
+                        <div className="flex justify-center">
+                            <img
+                                alt="SavvyCal"
+                                src="/src/assets/websummit-logo.png"
+                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
+                            />
+                        </div>
+                        <div className="flex justify-center">
+                            <img
+                                alt="Laravel"
+                                src="/src/assets/green-tech-festival-logo.png"
+                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
+                            />
+                        </div>
+                        <div className="flex justify-center">
+                            <img
+                                alt="Transistor"
+                                src="/src/assets/itsa-logo.png"
+                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }

@@ -1,8 +1,8 @@
 const stats = [
-    { id: 1, name: 'Lorem ipsum', value: '8,000+' },
-    { id: 2, name: 'Lorem ipsum', value: '3%' },
-    { id: 4, name: 'Lorem ipsum', value: '$70M' },
-]
+    { id: 1, name: 'Vermittelte Kandidaten', value: '150+' },
+    { id: 2, name: 'Risiko', value: '0%' },
+    { id: 3, name: 'Durchschnittliche Einstellungszeit', value: '30 Tage' },
+];
 
 export default function Example() {
     return (
@@ -11,10 +11,10 @@ export default function Example() {
                 <div className="mx-auto max-w-2xl lg:max-w-none">
                     <div className="text-center">
                         <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                            Lorem ispum dolor sit amet
+                            Wir finden dein IT-Talent
                         </h2>
                         <p className="mt-4 text-lg/8 text-gray-600">
-                            Lorem ipsum dolor sit amet consect adipisicing possimus.
+                            Mit Talentlynx läuft die Suche nach IT-Fachkräften einfach, schnell und ohne Stress.
                         </p>
                     </div>
                     <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
