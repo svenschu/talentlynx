@@ -1,49 +1,49 @@
-import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
-import {MinusSmallIcon, PlusSmallIcon} from '@heroicons/react/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
 
 const faqs = [
     {
-        question: "Lorem ipsum dolor sit amet?",
+        question: "Unterstützt ihr jedes Unternehmen?",
         answer:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Wir konzentrieren uns auf Unternehmen im IT-Bereich, besonders auf Tech-Teams, die Softwareentwickler, Architekten, Test Engineers und mehr brauchen.",
     },
     {
-        question: "Lorem ipsum dolor sit amet?",
+        question: "Was unterscheidet euch von anderen Recruitern?",
         answer:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Wir sind mehr als nur ein Dienstleister – wir sind dein strategischer Partner. Wir begleiten dich von der ersten Beratung bis hin zur langfristigen Bindung der eingestellten Kandidaten.",
     },
     {
-        question: "Lorem ipsum dolor sit amet?",
+        question: "Wie lange dauert es, eine Stelle zu besetzen?",
         answer:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Dank unserer Inbound-Hiring-Strategie und eines Netzwerks von über 5000 IT-Fachkräften können wir dir qualifizierte Kandidaten oft innerhalb von 30 Tagen präsentieren.",
     },
     {
-        question: "Lorem ipsum dolor sit amet?",
+        question: "Wie minimiert ihr das Risiko von Fehlbesetzungen?",
         answer:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Mit unserer 0%-Risiko-Garantie und einem gründlichen 15-Punkte-Bewertungssystem stellen wir sicher, dass du nur die besten Kandidaten erhältst.",
     },
     {
-        question: "Lorem ipsum dolor sit amet?",
+        question: "Welche Technologien unterstützt euer Netzwerk?",
         answer:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Unser Netzwerk umfasst Experten in Technologien wie JavaScript, Python, AWS, React, Angular, .NET und vielen weiteren modernen Tools und Plattformen.",
     },
     {
-        question: "Lorem ipsum dolor sit amet?",
+        question: "Wie funktioniert eure Inbound-Hiring-Strategie?",
         answer:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Wir kombinieren Headhunting-Expertise mit modernster Technologie, KI und kontinuierlicher Marktanalyse, um die besten passiven Talente schnell und effizient für dich zu finden.",
     },
     {
-        question: "Lorem ipsum dolor sit amet?",
+        question: "Wie viel kostet es, mit euch zusammenzuarbeiten?",
         answer:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Unsere Preisstruktur ist transparent: Du zahlst nur, wenn wir erfolgreich die passenden Kandidaten für dich finden – ohne versteckte Kosten.",
     },
     {
-        question: "Lorem ipsum dolor sit amet?",
+        question: "Warum ist TalentLynx die beste Wahl für uns?",
         answer:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+            "Wir liefern dir nicht nur schnelle Ergebnisse, sondern sorgen durch gründliche Auswahlverfahren und langfristige Bindungsstrategien für nachhaltigen Erfolg.",
     },
-    // More questions...
-]
+    // Weitere Fragen und Antworten können bei Bedarf hinzugefügt werden
+];
 
 export default function Example() {
     return (
@@ -61,9 +61,9 @@ export default function Example() {
                                         className="group flex w-full items-start justify-between text-left text-gray-900">
                                         <span className="text-base/7 font-semibold">{faq.question}</span>
                                         <span className="ml-6 flex h-7 items-center">
-                      <PlusSmallIcon aria-hidden="true" className="size-6 group-data-[open]:hidden"/>
-                      <MinusSmallIcon aria-hidden="true" className="size-6 [.group:not([data-open])_&]:hidden"/>
-                    </span>
+                                            <PlusSmallIcon aria-hidden="true" className="size-6 group-data-[open]:hidden" />
+                                            <MinusSmallIcon aria-hidden="true" className="size-6 [.group:not([data-open])_&]:hidden" />
+                                        </span>
                                     </DisclosureButton>
                                 </dt>
                                 <DisclosurePanel as="dd" className="mt-2 pr-12">
@@ -75,5 +75,5 @@ export default function Example() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
