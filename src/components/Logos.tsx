@@ -8,7 +8,7 @@ export default function Example() {
                     {/* Textbereich */}
                     <div className="mx-auto w-full max-w-xl lg:mx-0">
                         <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                            Besuchte Messen und Konferenzen
+                            Besuchte Messen und Konferenzen, Text mittig, darunter logo slider
                         </h2>
                         <p className="mt-6 text-lg text-gray-300">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam

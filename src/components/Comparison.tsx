@@ -18,10 +18,10 @@ const tiers = [
         featured: false,
     },
     {
-        name: 'Unsere Lösung: TalentLynx',
+        name: 'Unsere Lösung: TalentLynx (Hintergrund bei Icons + andere Farbe)',
         id: 'tier-enterprise',
         href: '#',
-        priceMonthly: 'TalentLynx',
+        priceMonthly: 'TalentLinx',
         description: "Langfristige Bindung, Präzision und Transparenz. Wir finden nicht nur Kandidaten, sondern die richtigen Talente.",
         features: [
             { text: '0 % Risiko Garantie & langfristige Bindung', success: true },
@@ -44,25 +44,21 @@ export default function Example() {
         <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
             <div
                 aria-hidden="true"
-                className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
+                className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             >
                 <div
                     style={{
                         clipPath:
                             'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                     }}
-                    className="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-brand-coral-500 to-brand-aquamarine-500 opacity-30"
+                    className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-brand-aquamarine-200 to-brand-aquamarine-300 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                 />
             </div>
             <div className="mx-auto max-w-4xl text-center">
-                <h2 className="text-base/7 font-semibold text-brand-aquamarine-500">Recruiting im Vergleich</h2>
-                <p className="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
-                    TalentLynx vs. Andere
-                </p>
+                <h2 className="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+                    Was wir bei Talent
+                </h2>
             </div>
-            <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600 sm:text-xl/8">
-                Erfahre, warum TalentLynx die bessere Wahl ist, um die richtigen Talente für dein Unternehmen zu finden.
-            </p>
             <div
                 className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-y-6 sm:mt-20 lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8"
             >
@@ -76,16 +72,7 @@ export default function Example() {
                             'rounded-3xl p-8 sm:p-10', // Alle Ecken abgerundet
                         )}
                     >
-                        <h3
-                            id={tier.id}
-                            className={classNames(
-                                tier.featured ? 'text-brand-aquamarine-500' : 'text-brand-primary-700',
-                                'text-base/7 font-semibold',
-                            )}
-                        >
-                            {tier.name}
-                        </h3>
-                        <p className="mt-4 flex items-baseline gap-x-2">
+                        <h3 className="mt-4 flex items-baseline gap-x-2">
                             <span
                                 className={classNames(
                                     tier.featured ? 'text-white' : 'text-gray-900',
@@ -94,7 +81,7 @@ export default function Example() {
                             >
                                 {tier.priceMonthly}
                             </span>
-                        </p>
+                        </h3>
                         <p
                             className={classNames(
                                 tier.featured ? 'text-gray-300' : 'text-gray-700',

@@ -1,4 +1,2 @@
-TODO: In Abschnitt 2 die Überschriften der Boxen größer
-TODO: „Darum sind wir anders“ raus
 TODO: „Nur eine weitere Personalvermittlung“ zentrieren
 TODO: Bei CTA den Farbverlauf ändern (evtl. von einem blau ins ein anderes blau)

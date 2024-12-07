@@ -48,11 +48,8 @@ export default function Example() {
                     className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                     <div className="lg:pr-4">
                         <div className="lg:max-w-lg">
-                            <p className="text-base/7 font-semibold font-mono text-brand-aquamarine-500">
-                                AI-Powered Recruiting
-                            </p>
                             <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                                Der TalentLynx Recruiting-Prozess
+                                Wie wir in 14 Tagen deine Position besetzen (timeline) - Als Prozess mit Zahlen, alles in der mitte, gitter weg, boxen von unten einfliegen lassen, mit strichen verbinden
                             </h1>
                             <p className="mt-6 text-xl/8 text-gray-700">
                                 Wir verbinden Technologie mit Erfahrung, um schnell und sicher die besten Developer zu
@@ -109,18 +106,6 @@ export default function Example() {
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div
-                    className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                    <video
-                        src="/talentlynx-process-animation.mp4"
-                        className="w-full max-w-full rounded-2xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                    />
                 </div>
             </div>
         </div>
