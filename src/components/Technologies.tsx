@@ -61,10 +61,10 @@ export default function Example() {
                         }`}
                         style={{ transitionDelay: "400ms" }}
                     >
-                        <div className="relative isolate overflow-hidden bg-indigo-500 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
+                        <div className="relative isolate overflow-hidden bg-brand-aqua-500 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
                             <div
                                 aria-hidden="true"
-                                className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white"
+                                className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-brand-aqua-100 opacity-20 ring-1 ring-inset ring-white"
                             />
                             <div className="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
                                 <img
