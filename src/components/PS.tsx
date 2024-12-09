@@ -1,6 +1,6 @@
 export default function Example() {
     return (
-        <div className="bg-gray-900 text-gray-100 py-24 sm:py-32">
+        <div className="bg-brand-primary-900 text-gray-100 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div
                     className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -24,7 +24,7 @@ export default function Example() {
                                         clipPath:
                                             'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                                     }}
-                                    className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-brand-coral-500 to-brand-aquamarine-500 opacity-40"
+                                    className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-brand-aqua-500 to-brand-aquamarine-500 opacity-40"
                                 />
                             </div>
                             <figure className="relative isolate">
@@ -40,7 +40,7 @@ export default function Example() {
                     {/* Rechter Bereich: Text */}
                     <div>
                         <div className="text-base/7 text-gray-300 lg:max-w-lg">
-                            <p className="text-base/7 font-semibold text-brand-aquamarine-500">Unsere Philosophie</p>
+                            <p className="text-base/7 font-semibold text-brand-aqua-500">Unsere Philosophie</p>
                             <h1 className="mt-2 text-4xl font-semibold tracking-tight text-gray-100 sm:text-5xl">
                                 Gemeinsam Großes erreichen
                             </h1>

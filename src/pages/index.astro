@@ -18,6 +18,7 @@ import Problems2 from '../components/Problems.tsx';
 import Technologies from '../components/Technologies.tsx';
 import CTA2 from '../components/CTA2.tsx';
 import Problems from '../components/Problems.tsx';
+import Statement from '../components/Statement.tsx';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -26,16 +27,16 @@ import Problems from '../components/Problems.tsx';
         <Features client:load/>
         <Problems client:load/>
         <Process client:load/>
-        <Technologies/>
-        <Stats/>
-        <TechStack/>
-        <Testimonials/>
-        <Logos/>
-        <Comparison/>
-        <CTA/>
-        <CTA2/>
+        <Technologies client:load/>
+        <Statement client:load/>
+        <Stats client:load/>
+        <TechStack client:load/>
+        <Testimonials client:load/>
+        <Logos client:load/>
+        <Comparison client:load/>
+        <CTA2 client:load/>
         <FAQ client:load/>
-        <PS/>
-        <Footer/>
+        <PS client:load/>
+        <Footer client:load/>
     </main>
 </Layout>

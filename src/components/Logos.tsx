@@ -1,62 +1,126 @@
+// Example.tsx
+import React, { useState, useEffect } from 'react';
 import CTAButton from "./CTAButton.tsx";
 
+// Swiper-Stile importieren
+import 'swiper/css';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper/modules';
+
 export default function Example() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        // Verzögere das Einblenden leicht, um sicherzustellen, dass die Animation startet
+        const timer = setTimeout(() => {
+            setIsVisible(true);
+        }, 100); // 100ms Verzögerung
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    // Original Slides
+    const slides = [
+        {
+            alt: "AWS Summit",
+            src: "/src/assets/aws-summit-logo.png",
+        },
+        {
+            alt: "Google Cloud Summit",
+            src: "/src/assets/google-cloud-summit-logo.png",
+        },
+        {
+            alt: "Web Summit",
+            src: "/src/assets/websummit-logo.png",
+        },
+        {
+            alt: "Green Tech Festival",
+            src: "/src/assets/green-tech-festival-logo.png",
+        },
+        {
+            alt: "ITSA",
+            src: "/src/assets/itsa-logo.png",
+        },
+    ];
+
+    // Duplizierte Slides für nahtloses Looping
+    const duplicatedSlides = [...slides, ...slides, ...slides];
+
     return (
         <div className="bg-gray-900 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
-                    {/* Textbereich */}
-                    <div className="mx-auto w-full max-w-xl lg:mx-0">
-                        <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                            Besuchte Messen und Konferenzen, Text mittig, darunter logo slider
-                        </h2>
-                        <p className="mt-6 text-lg text-gray-300">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-                            sed. Quam a
-                            scelerisque amet ullamcorper eu enim et fermentum, augue.
-                        </p>
-                        <div className="mt-8 flex items-center gap-x-6">
-                            <CTAButton/>
+                {/* Flex-Container für das Layout: flex-col auf kleineren Bildschirmen, flex-row auf größeren */}
+                <div className="flex flex-col lg:flex-row items-center gap-20">
+
+                    {/* Linker Bereich: Text und CTA Button */}
+                    <div
+                        className={`w-full lg:w-1/2 transform transition-opacity transition-transform duration-700 ${
+                            isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
+                        }`}
+                        style={{ transitionDelay: "200ms" }} // Verzögerung für den Textbereich
+                    >
+                        <div className="text-center lg:text-left">
+                            <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+                                Besuchte Messen und Konferenzen
+                            </h2>
+                            <p className="mt-6 text-lg text-gray-300">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus auch
+                                sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.
+                            </p>
+                            <div className="mt-8">
+                                <CTAButton />
+                            </div>
                         </div>
                     </div>
-                    {/* Logos */}
+
+                    {/* Rechter Bereich: Logo Slider */}
                     <div
-                        className="mx-auto grid w-full max-w-xl grid-cols-2 gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-                        <div className="flex justify-center">
-                            <img
-                                alt="Tuple"
-                                src="/src/assets/aws-summit-logo.png"
-                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
-                            />
-                        </div>
-                        <div className="flex justify-center">
-                            <img
-                                alt="Reform"
-                                src="/src/assets/google-cloud-summit-logo.png"
-                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
-                            />
-                        </div>
-                        <div className="flex justify-center">
-                            <img
-                                alt="SavvyCal"
-                                src="/src/assets/websummit-logo.png"
-                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
-                            />
-                        </div>
-                        <div className="flex justify-center">
-                            <img
-                                alt="Laravel"
-                                src="/src/assets/green-tech-festival-logo.png"
-                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
-                            />
-                        </div>
-                        <div className="flex justify-center">
-                            <img
-                                alt="Transistor"
-                                src="/src/assets/itsa-logo.png"
-                                className="h-auto max-h-16 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
-                            />
-                        </div>
+                        className={`w-full lg:w-1/2 transform transition-opacity transition-transform duration-700 ${
+                            isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
+                        }`}
+                        style={{ transitionDelay: "400ms" }} // Verzögerung für den Slider
+                    >
+                        <Swiper
+                            modules={[Autoplay]} // Nur Autoplay-Modul verwenden
+                            spaceBetween={30}
+                            slidesPerView={3} // Standardmäßig 3 Slides anzeigen
+                            loop={true}
+                            autoplay={{
+                                delay: 0, // Kein Delay zwischen den Slides
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: false,
+                            }}
+                            speed={5000} // Geschwindigkeit für kontinuierliches Scrollen (in ms)
+                            freeMode={true} // Ermöglicht kontinuierliches Scrollen
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 30,
+                                },
+                                1024: {
+                                    slidesPerView: 3, // Immer maximal 3 Slides anzeigen
+                                    spaceBetween: 30,
+                                },
+                            }}
+                            className="mySwiper"
+                        >
+                            {duplicatedSlides.map((slide, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className="flex justify-center">
+                                        <img
+                                            alt={slide.alt}
+                                            src={slide.src}
+                                            className="h-auto max-h-16 sm:max-h-20 border border-gray-700 rounded-lg shadow-md shadow-gray-800"
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                     </div>
                 </div>
             </div>

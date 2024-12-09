@@ -65,7 +65,7 @@ export default function Example() {
                     >
                         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
                             <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                                Was Tech-Unternehmen aktuell bewegt
+                                Kennst du diese Probleme?
                             </p>
                             <p className="mt-6 text-lg text-gray-600">
                                 Nach Gesprächen mit über 400 Entscheidern aus dem Technologie-Sektor zeigen sich diese zentralen Problemfelder:

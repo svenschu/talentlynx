@@ -1,4 +1,7 @@
+// Example.tsx
+import React, { useState, useEffect } from 'react';
 import { CheckIcon, XMarkIcon } from '@heroicons/react/20/solid';
+import CTAButton from "./CTAButton.tsx";
 
 const tiers = [
     {
@@ -40,6 +43,17 @@ function classNames(...classes: any[]) {
 }
 
 export default function Example() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        // Verzögere das Einblenden leicht, um sicherzustellen, dass die Animation startet
+        const timer = setTimeout(() => {
+            setIsVisible(true);
+        }, 100); // 100ms Verzögerung
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
             <div
@@ -55,28 +69,33 @@ export default function Example() {
                 />
             </div>
             <div className="mx-auto max-w-4xl text-center">
-                <h2 className="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
-                    Was wir bei Talent
+                <h2
+                    className={`mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl 
+                    transform transition-opacity transition-transform duration-700 
+                    ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+                    style={{ transitionDelay: "200ms" }} // Verzögerung für die Überschrift
+                >
+                    Was wir bei TalentLinx anders machen
                 </h2>
             </div>
             <div
-                className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-y-6 sm:mt-20 lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8"
-            >
+                className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-y-6 sm:mt-20 lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8">
                 {tiers.map((tier, tierIdx) => (
                     <div
                         key={tier.id}
                         className={classNames(
                             tier.featured
-                                ? 'relative bg-brand-primary-900 text-white shadow-2xl'
-                                : 'bg-white text-gray-900 ring-1 ring-gray-200',
-                            'rounded-3xl p-8 sm:p-10', // Alle Ecken abgerundet
+                                ? 'relative bg-brand-primary-600 text-white shadow-2xl'
+                                : 'bg-gray-100 text-gray-900 ring-1 ring-gray-200',
+                            'rounded-3xl p-8 sm:p-10 transform transition-opacity transition-transform duration-700'
                         )}
+                        style={{ transitionDelay: `${400 + tierIdx * 200}ms` }} // Verzögerung pro Karte
                     >
                         <h3 className="mt-4 flex items-baseline gap-x-2">
                             <span
                                 className={classNames(
                                     tier.featured ? 'text-white' : 'text-gray-900',
-                                    'text-5xl font-semibold tracking-tight',
+                                    'text-5xl font-semibold tracking-tight'
                                 )}
                             >
                                 {tier.priceMonthly}
@@ -85,7 +104,7 @@ export default function Example() {
                         <p
                             className={classNames(
                                 tier.featured ? 'text-gray-300' : 'text-gray-700',
-                                'mt-6 text-base/7',
+                                'mt-6 text-base/7'
                             )}
                         >
                             {tier.description}
@@ -94,21 +113,27 @@ export default function Example() {
                             role="list"
                             className={classNames(
                                 tier.featured ? 'text-gray-300' : 'text-gray-700',
-                                'mt-8 space-y-3 text-sm/6 sm:mt-10',
+                                'mt-8 space-y-3 text-sm/6 sm:mt-10'
                             )}
                         >
                             {tier.features.map(({ text, success }) => (
                                 <li key={text} className="flex gap-x-3">
                                     {success ? (
-                                        <CheckIcon
-                                            aria-hidden="true"
-                                            className="h-6 w-5 flex-none text-brand-aquamarine-500"
-                                        />
+                                        <span
+                                            className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-aqua-600">
+                                            <CheckIcon
+                                                aria-hidden="true"
+                                                className="h-5 w-5 text-white"
+                                            />
+                                        </span>
                                     ) : (
-                                        <XMarkIcon
-                                            aria-hidden="true"
-                                            className="h-6 w-5 flex-none text-red-500"
-                                        />
+                                        <span
+                                            className="flex h-6 w-6 items-center justify-center rounded-full bg-red-500">
+                                            <XMarkIcon
+                                                aria-hidden="true"
+                                                className="h-5 w-5 text-white"
+                                            />
+                                        </span>
                                     )}
                                     {text}
                                 </li>
