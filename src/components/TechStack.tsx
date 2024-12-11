@@ -29,7 +29,7 @@ export default function Example() {
                     >
                         <img
                             alt="Company related visual"
-                            src="/tech-stack.jpg"
+                            src="/src/assets/tech-stack.jpg"
                             className="h-full w-full object-cover"
                         />
                     </div>

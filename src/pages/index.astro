@@ -19,15 +19,21 @@ import Technologies from '../components/Technologies.tsx';
 import CTA2 from '../components/CTA2.tsx';
 import Problems from '../components/Problems.tsx';
 import Statement from '../components/Statement.tsx';
+import manAtDesk from '../assets/nachdenklicher-mann-an-schreibtisch.jpg';
+import talentNetwork from '../assets/talent-network.jpg';
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
         <Hero client:load/>
         <Features client:load/>
-        <Problems client:load/>
+        <Problems client:load>
+            <Image src={manAtDesk} alt="Thinking man at desk"/>
+        </Problems>
         <Process client:load/>
-        <Technologies client:load/>
+        <Technologies client:load>
+            <Image src={talentNetwork} alt="Network of talent acquisition channels"/>
+        </Technologies>
         <Statement client:load/>
         <Stats client:load/>
         <TechStack client:load/>
