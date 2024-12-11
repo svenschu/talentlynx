@@ -108,7 +108,7 @@ export default function Example() {
                                     spaceBetween: 30,
                                 },
                                 1024: {
-                                    slidesPerView: 3, // Immer maximal 3 Slides anzeigen
+                                    slidesPerView: 2, // Immer maximal 2 Slides anzeigen
                                     spaceBetween: 30,
                                 },
                             }}
