@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect} from "react";
+import curve from "../assets/section-curve.svg";
 
 export default function Example() {
     const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +16,7 @@ export default function Example() {
         <div
             className="-mb-1 -mx-1 pt-48 sm:pt-64 flex items-end"
             style={{
-                backgroundImage: "url('src/assets/section-curve.svg')",
+                backgroundImage: `url(${curve.src})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "top center",
                 backgroundSize: "cover",
@@ -28,7 +29,7 @@ export default function Example() {
                             className={`text-balance lg:text-6xl text-4xl font-semibold tracking-tight text-white 
                             transform transition-opacity transition-transform duration-700 
                             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-                            style={{ transitionDelay: "200ms" }}
+                            style={{transitionDelay: "200ms"}}
                         >
                             Statement
                         </h2>
