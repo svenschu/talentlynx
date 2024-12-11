@@ -1,12 +1,17 @@
 // Example.tsx
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import CTAButton from "./CTAButton.tsx";
+import awsSummitLogo from "../assets/aws-summit-logo.png";
+import googleCloudSummitLogo from "../assets/google-cloud-summit-logo.png";
+import webSummitLogo from "../assets/websummit-logo.png";
+import greenTechFestivalLogo from "../assets/green-tech-festival-logo.png";
+import itsaLogo from "../assets/itsa-logo.png";
 
 // Swiper-Stile importieren
 import 'swiper/css';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from 'swiper/modules';
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Autoplay} from 'swiper/modules';
 
 export default function Example() {
     const [isVisible, setIsVisible] = useState(false);
@@ -24,23 +29,23 @@ export default function Example() {
     const slides = [
         {
             alt: "AWS Summit",
-            src: "/src/assets/aws-summit-logo.png",
+            src: awsSummitLogo.src,
         },
         {
             alt: "Google Cloud Summit",
-            src: "/src/assets/google-cloud-summit-logo.png",
+            src: googleCloudSummitLogo.src,
         },
         {
             alt: "Web Summit",
-            src: "/src/assets/websummit-logo.png",
+            src: webSummitLogo.src,
         },
         {
             alt: "Green Tech Festival",
-            src: "/src/assets/green-tech-festival-logo.png",
+            src: greenTechFestivalLogo.src,
         },
         {
             alt: "ITSA",
-            src: "/src/assets/itsa-logo.png",
+            src: itsaLogo.src,
         },
     ];
 
@@ -58,7 +63,7 @@ export default function Example() {
                         className={`w-full lg:w-1/2 transform transition-opacity transition-transform duration-700 ${
                             isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
                         }`}
-                        style={{ transitionDelay: "200ms" }} // Verzögerung für den Textbereich
+                        style={{transitionDelay: "200ms"}} // Verzögerung für den Textbereich
                     >
                         <div className="text-center lg:text-left">
                             <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -69,7 +74,7 @@ export default function Example() {
                                 sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.
                             </p>
                             <div className="mt-8">
-                                <CTAButton />
+                                <CTAButton/>
                             </div>
                         </div>
                     </div>
@@ -79,7 +84,7 @@ export default function Example() {
                         className={`w-full lg:w-1/2 transform transition-opacity transition-transform duration-700 ${
                             isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
                         }`}
-                        style={{ transitionDelay: "400ms" }} // Verzögerung für den Slider
+                        style={{transitionDelay: "400ms"}} // Verzögerung für den Slider
                     >
                         <Swiper
                             modules={[Autoplay]} // Nur Autoplay-Modul verwenden
@@ -99,7 +104,7 @@ export default function Example() {
                                     spaceBetween: 20,
                                 },
                                 768: {
-                                    slidesPerView: 3,
+                                    slidesPerView: 2,
                                     spaceBetween: 30,
                                 },
                                 1024: {

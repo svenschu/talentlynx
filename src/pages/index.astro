@@ -21,6 +21,7 @@ import Problems from '../components/Problems.tsx';
 import Statement from '../components/Statement.tsx';
 import manAtDesk from '../assets/nachdenklicher-mann-an-schreibtisch.jpg';
 import talentNetwork from '../assets/talent-network.jpg';
+import techStack from '../assets/tech-stack.jpg';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -36,7 +37,9 @@ import talentNetwork from '../assets/talent-network.jpg';
         </Technologies>
         <Statement client:load/>
         <Stats client:load/>
-        <TechStack client:load/>
+        <TechStack client:load>
+            <Image src={techStack} alt="Tiles with logos of many different web technologies"/>
+        </TechStack>
         <Testimonials client:load/>
         <Logos client:load/>
         <Comparison client:load/>

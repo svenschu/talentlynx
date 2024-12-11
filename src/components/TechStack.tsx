@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-export default function Example() {
+export default function Example({children}: any) {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -20,18 +20,14 @@ export default function Example() {
 
                     {/* Bild auf der linken Seite */}
                     <div
-                        className={`relative overflow-hidden rounded-3xl shadow-2xl lg:max-w-lg transform transition-opacity transition-transform duration-700 ${
+                        className={`relative overflow-hidden rounded-2xl shadow-lg lg:max-w-lg transform transition-opacity transition-transform duration-700 ${
                             isVisible
                                 ? "opacity-100 translate-x-0"
                                 : "opacity-0 -translate-x-4"
                         }`}
                         style={{transitionDelay: "200ms"}} // Verzögerung für das Bild
                     >
-                        <img
-                            alt="Company related visual"
-                            src="/src/assets/tech-stack.jpg"
-                            className="h-full w-full object-cover"
-                        />
+                        {children}
                     </div>
 
                     {/* Inhalt auf der rechten Seite */}
