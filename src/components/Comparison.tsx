@@ -8,7 +8,7 @@ const tiers = [
         name: 'Typische Konkurrenz',
         id: 'tier-hobby',
         href: '#',
-        priceMonthly: 'Andere',
+        priceMonthly: 'Andere Recruiter',
         description: "Einmalbesetzung, CV-Spamming und hohe Kosten. Risiko und mangelnde Transparenz gehören zum Standard.",
         features: [
             { text: 'Keine Risikominimierung & Fehlbesetzung', success: false },
@@ -24,10 +24,10 @@ const tiers = [
         name: 'Unsere Lösung: TalentLynx (Hintergrund bei Icons + andere Farbe)',
         id: 'tier-enterprise',
         href: '#',
-        priceMonthly: 'TalentLinx',
-        description: "Langfristige Bindung, Präzision und Transparenz. Wir finden nicht nur Kandidaten, sondern die richtigen Talente.",
+        priceMonthly: 'TalentLinx (Gradient einbauen)',
+        description: "Langfristige Bindung, Präzision und Transparenz. Wir finden nicht nur Kandidaten, sondern die richtigen Talente. (Description entfernen)",
         features: [
-            { text: '0 % Risiko Garantie & langfristige Bindung', success: true },
+            { text: '0 % Risiko Garantie & langfristige Bindung (darunter noch einen TExt einbauen)', success: true },
             { text: 'Precision Hiring: Nur Profile mit über 75 % Bewertung', success: true },
             { text: 'Kandidaten sind motiviert und vorbereitet', success: true },
             { text: '100 % Transparenz mit Einblick in unsere Prozesse', success: true },
@@ -77,6 +77,7 @@ export default function Example() {
                 >
                     Was wir bei TalentLinx anders machen
                 </h2>
+                <CTAButton />
             </div>
             <div
                 className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-y-6 sm:mt-20 lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8">

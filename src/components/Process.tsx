@@ -4,7 +4,8 @@ import {
     AdjustmentsHorizontalIcon,
     SparklesIcon,
 } from '@heroicons/react/20/solid';
-import Step from './Step'; // Passe den Pfad entsprechend an
+import Step from './Step';
+import CTAButton from "./CTAButton"; // Passe den Pfad entsprechend an
 
 const steps = [
     {
@@ -41,13 +42,14 @@ export default function Example() {
                 {/* Überschrift und Untertitel */}
                 <div className="mx-auto max-w-3xl text-center">
                     <h1 className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                        Wie wir in 14 Tagen deine Position besetzen
+                        Wie wir in 14 Tagen deine Position besetzen (Überschrift sticky und Scrolling auf der Stelle)
                     </h1>
                     <p className="mt-6 text-xl text-gray-700">
                         Wir verbinden Technologie mit Erfahrung, um schnell und sicher die besten Developer zu finden.
                         Nur die Top 25 % der Kandidaten bestehen unseren Prozess – für höchste Qualität und langfristige
                         Erfolge.
                     </p>
+                    <CTAButton/>
                 </div>
 
                 {/* Vertikale Timeline mit Prozessschritten */}

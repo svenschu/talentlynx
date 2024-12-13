@@ -31,7 +31,7 @@ export default function Example() {
                             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
                             style={{transitionDelay: "200ms"}}
                         >
-                            Statement
+                            Das können wir dir garantieren.
                         </h2>
                     </div>
                 </div>

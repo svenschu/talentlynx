@@ -1,11 +1,12 @@
 import {useState, useEffect} from "react";
+import CTAButton from "./CTAButton";
 
 const testimonials = [
     {
         id: 1,
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: 'Mohamed is a trustworthy, dynamic recruiter and very reliable. When it comes to specific profiles , crucial for the development of one of our teams. Since effective recruiting is the key success factor in the tech industry, any minute spent with Mohamed adds value.',
         author: {
-            name: 'Leslie Alexander',
+            name: 'Sven Scheffler COO Ströer Content Group',
             handle: 'lesliealexander1',
             imageUrl:
                 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -13,9 +14,9 @@ const testimonials = [
     },
     {
         id: 2,
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: 'Mohamed hat die von uns gestellten Herausforderungen hervorragend gelöst. Binnen kurzer Zeit stand eine sehr gute Auswahl an Kandidat:innen zur Verfügung. Der Interviewprozess wurde entschlossen und transparent gestaltet, sodass wir die für uns beste Auswahl treffen konnten. Vielen Dank und gerne wieder.',
         author: {
-            name: 'Leslie Alexander',
+            name: 'Christian Fischer, Director of Engineering @Erblotse',
             handle: 'lesliealexander2',
             imageUrl:
                 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -23,9 +24,23 @@ const testimonials = [
     },
     {
         id: 3,
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: 'I had the pleasure of working with Mohamed when he placed me in my current role. Mohamed was professional, straightforward, and efficient throughout the entire process. He took the time to understand my career goals and the company’s needs, ensuring a perfect match. His pleasant demeanor and clear communication made the experience seamless and enjoyable. I highly recommend Mohamed to any professional seeking new opportunities or any organization looking for an effective recruiter.',
         author: {
-            name: 'Leslie Alexander',
+            name: 'Stephan Delkus Geschäftsführer Itslearning GmbH',
+            handle: 'lesliealexander3',
+            imageUrl:
+                'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        },
+    },
+    {
+        id: 4,
+        body: 'I am thrilled to recommend Mohamed, who played a pivotal role in helping me secure my current job. Throughout the recruitment process, Mohamed demonstrated exceptional professionalism, technical expertise, and a genuine dedication to my career goals.\n' +
+            'From our initial conversation, it was clear that Mohamed is incredibly result-oriented. He took the time to understand my skills, experiences, and career aspirations, ensuring that every opportunity he presented was a perfect fit. His insightful guidance and proactive approach kept me motivated and focused throughout the job search process.\n' +
+            'Mohamed\'s standout qualities are his unwavering confidence and technical acumen. He has a deep understanding of the industry and the specific technical requirements of the roles he recruits. This expertise enabled him to provide me with invaluable advice and prepare me thoroughly for each interview stage.\n' +
+            'Additionally, Mohamed was always available to offer support and answer my questions. His helpfulness and commitment to my success was evident in every interaction. He went above and beyond to ensure that I was well-prepared and confident, which ultimately led to a successful outcome.\n' +
+            'I am incredibly grateful to Mohamed for His assistance and highly recommend him to anyone seeking a knowledgeable, dedicated, and result-driven recruiter. His expertise and support have profoundly impacted my career, and I am confident he will continue to excel in helping others achieve their career goals.',
+        author: {
+            name: 'Arman Karimi (Senior Software Engineer)ZAGENO Inc.',
             handle: 'lesliealexander3',
             imageUrl:
                 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -66,6 +81,7 @@ export default function Example() {
                     >
                         We have worked with thousands of amazing people
                     </p>
+                    <CTAButton />
                 </div>
 
                 <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">

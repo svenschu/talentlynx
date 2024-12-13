@@ -48,6 +48,7 @@ export default function Example() {
             src: itsaLogo.src,
         },
     ];
+    // DMX co Bits und Bretzels
 
     // Duplizierte Slides für nahtloses Looping
     const duplicatedSlides = [...slides, ...slides, ...slides];
@@ -73,9 +74,6 @@ export default function Example() {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus auch
                                 sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.
                             </p>
-                            <div className="mt-8">
-                                <CTAButton/>
-                            </div>
                         </div>
                     </div>
 
