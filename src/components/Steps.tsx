@@ -8,7 +8,7 @@ export default function Steps({steps = defaultSteps}: { steps?: { id: string; na
     return (
         <section
             aria-label="Steps"
-            className="rounded-md border border-gray-600 bg-gray-800 shadow-md"
+            className="rounded-md border border-gray-600 bg-brand shadow-md"
         >
             <ol
                 role="list"

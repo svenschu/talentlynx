@@ -37,7 +37,7 @@ const steps = [
 export default function Example() {
     return (
         <div
-            className="relative isolate overflow-hidden bg-gradient-to-br from-white to-brand-primary-50 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+            className="relative isolate overflow-hidden bg-gradient-to-br from-white to-brand-aqua-50 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
             <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
                 {/* Überschrift und Untertitel */}
                 <div className="mx-auto max-w-3xl text-center">
