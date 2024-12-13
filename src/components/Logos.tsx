@@ -54,7 +54,7 @@ export default function Example() {
     const duplicatedSlides = [...slides, ...slides, ...slides];
 
     return (
-        <div className="bg-gray-900 py-24 sm:py-32">
+        <div className="bg-gradient-to-br from-brand-aqua-800 to-brand-aqua-900 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 {/* Flex-Container für das Layout: flex-col auf kleineren Bildschirmen, flex-row auf größeren */}
                 <div className="flex flex-col lg:flex-row items-center gap-20">

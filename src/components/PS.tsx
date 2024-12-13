@@ -1,6 +1,6 @@
-export default function Example({ children }: any) {
+export default function Example({children}: any) {
     return (
-        <div className="bg-brand-primary-900 text-gray-100 py-24 sm:py-32">
+        <div className="bg-gradient-to-br from-brand-aqua-800 to-brand-aqua-900 text-gray-100 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div
                     className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-16 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -11,7 +11,8 @@ export default function Example({ children }: any) {
                         {children}
 
                         {/* Farbverlauf-Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-primary-900 pointer-events-none rounded-2xl"></div>
+                        <div
+                            className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-primary-900 pointer-events-none rounded-2xl"></div>
 
                         {/* Zitat am unteren Rand */}
                         <figure className="absolute bottom-6 left-6 right-6">
@@ -32,13 +33,18 @@ export default function Example({ children }: any) {
                             </h1>
                             <div className="max-w-xl">
                                 <p className="mt-6">
-                                    Wir glauben daran, dass die richtigen Menschen den Unterschied machen. Jedes Projekt beginnt mit einer Idee – und es sind die Talente, die sie Wirklichkeit werden lassen.
+                                    Wir glauben daran, dass die richtigen Menschen den Unterschied machen. Jedes Projekt
+                                    beginnt mit einer Idee – und es sind die Talente, die sie Wirklichkeit werden
+                                    lassen.
                                 </p>
                                 <p className="mt-8">
-                                    Unser Ziel ist es, dir nicht nur Mitarbeiter zu vermitteln, sondern Partner für deine Vision zu finden. Durch sorgfältige Auswahl sorgen wir dafür, dass du nicht nur fachliche, sondern auch kulturelle Matches in deinem Team hast.
+                                    Unser Ziel ist es, dir nicht nur Mitarbeiter zu vermitteln, sondern Partner für
+                                    deine Vision zu finden. Durch sorgfältige Auswahl sorgen wir dafür, dass du nicht
+                                    nur fachliche, sondern auch kulturelle Matches in deinem Team hast.
                                 </p>
                                 <p className="mt-8">
-                                    Gemeinsam schaffen wir eine Basis für Innovation und nachhaltigen Erfolg – denn dein Erfolg ist unser Antrieb.
+                                    Gemeinsam schaffen wir eine Basis für Innovation und nachhaltigen Erfolg – denn dein
+                                    Erfolg ist unser Antrieb.
                                 </p>
                             </div>
                         </div>

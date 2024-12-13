@@ -85,7 +85,7 @@ export default function Example({ children }: any) {
                                         <dt className="inline font-semibold text-gray-900">
                                             <feature.icon
                                                 aria-hidden="true"
-                                                className="absolute left-1 top-1 h-5 w-5 text-brand-aqua-600"
+                                                className="absolute left-1 top-1 h-5 w-5 text-brand-aqua-500"
                                             />
                                             {feature.name}
                                         </dt>

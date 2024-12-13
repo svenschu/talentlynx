@@ -31,7 +31,7 @@ const navigation = {
 
 export default function Example() {
     return (
-        <footer className="bg-gray-950">
+        <footer className="bg-black">
             <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
                 {/* LinkedIn Icon */}
                 <div className="flex justify-center mb-6">

@@ -8,7 +8,7 @@ import {
 
 const features = [
     {
-        name: 'Dein strategischer Partner (verschiedene Farben nehmen)',
+        name: 'Dein strategischer Partner (verschiedene Farben nehmen, + Rand 1:1 wie bei netlify)',
         description:
             'Wir unterstützen dich bei jedem Schritt: von der Beratung bis zur langfristigen Betreuung nach der Einstellung. Gemeinsam optimieren wir Prozesse und bauen ein starkes Tech-Team für deinen Erfolg.',
         icon: ArrowTrendingUpIcon,
@@ -22,7 +22,7 @@ const features = [
             'Unsere 0 % Risiko-Garantie schützt dich vor teuren Fehlbesetzungen. Profitiere von IT-Fachkräften, die direkt einen Mehrwert schaffen.',
         icon: MagnifyingGlassIcon,
         chipText: '0% Risiko',
-        chipBgColor: 'bg-yellow-500',
+        chipBgColor: 'bg-brand-aqua-500',
         chipTextColor: 'text-white',
     },
     {
@@ -43,7 +43,7 @@ const features = [
             'KI-gestützte Tools und persönliches Headhunting – die perfekte Kombination. Unsere smarte Strategie zieht täglich neue Talente an und hält uns der Konkurrenz voraus.',
         icon: ExclamationCircleIcon,
         chipText: 'Tech + HH',
-        chipBgColor: 'bg-blue-600',
+        chipBgColor: 'bg-brand-aqua-500',
         chipTextColor: 'text-white',
     },
     {
@@ -52,7 +52,7 @@ const features = [
             'Eine zusätzliche Box mit anpassbarem Chip. Ideal, um weitere Vorteile hervorzuheben.',
         icon: ExclamationCircleIcon,
         chipText: 'Extra',
-        chipBgColor: 'bg-green-600',
+        chipBgColor: 'bg-brand-aqua-500',
         chipTextColor: 'text-white',
     }
 ]
