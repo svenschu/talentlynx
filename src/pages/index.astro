@@ -20,11 +20,12 @@ import manAtDesk from '../assets/nachdenklicher-mann-an-schreibtisch.jpg';
 import talentNetwork from '../assets/talent-network.jpg';
 import techStack from '../assets/tech-stack.jpg';
 import teamSuccess from '../assets/team-success.jpg';
+import * as homepage from '../../content/homepage/homepage.md';
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
-        <Hero client:load/>
+        <Hero title={homepage.frontmatter.title} client:load/>
         <Features client:load/>
         <Problems client:load>
             <Image src={manAtDesk} alt="Thinking man at desk"/>

@@ -11,7 +11,7 @@ const navigation = [
     {name: 'Kontakt', href: '#'},
 ]
 
-export default function Example() {
+export default function Example({title}: any) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
@@ -127,7 +127,7 @@ export default function Example() {
                     <div className="mx-auto max-w-4xl lg:mx-0 lg:flex-auto">
                         <h1 className="mt-10 text-2xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
                             <Typewriter className="font-mono text-brand-aqua-600"/><br/>
-                            in 14 Tagen einstellen ohne Risiko
+                            {title}
                         </h1>
                         <p className="mt-8 text-lg font-normal text-gray-600 sm:text-xl max-w-2xl">
                             Wir helfen über 150 Unternehmen dabei, A-Player zu gewinnen und langfristig zu binden
