@@ -2,9 +2,9 @@ backend:
   name: github
   repo: svenschu/talentlynx
   branch: main
-#  auth:
-#    client_id: ${GITHUB_CLIENT_ID}
-#    client_secret: ${GITHUB_CLIENT_SECRET}
+  auth:
+    client_id: ${GITHUB_CLIENT_ID}
+    client_secret: ${GITHUB_CLIENT_SECRET}
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
