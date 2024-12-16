@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: svenschu/talentlynx
+  repo: "svenschu/talentlynx"
   branch: main
   auth:
     client_id: ${GITHUB_CLIENT_ID}
