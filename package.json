@@ -2,6 +2,9 @@
   "name": "talentlinx",
   "type": "module",
   "version": "0.0.1",
+  "workspaces": [
+    "backend"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
