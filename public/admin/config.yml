@@ -1,7 +1,7 @@
 site_url: "https://talentlynx.pages.dev"
 search: false
 backend:
-  name: github
+  name: git-gateway
   repo: "svenschu/talentlynx"
   branch: main
   base_url: "https://decap-proxy.simplexo.de"
