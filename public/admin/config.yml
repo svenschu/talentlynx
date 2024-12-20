@@ -1,7 +1,7 @@
 site_url: "https://talentlynx.pages.dev"
 search: false
 backend:
-  name: git-gateway
+  name: github
   repo: "svenschu/talentlynx"
   branch: main
   base_url: "https://decap-proxy.simplexo.de"
@@ -9,8 +9,8 @@ backend:
     client_id: ${GITHUB_CLIENT_ID}
     client_secret: ${GITHUB_CLIENT_SECRET}
 
-media_folder: "src/assets"
-public_folder: "public"
+media_folder: "/src/assets"
+public_folder: "/public"
 
 collections:
   - name: "blog"
