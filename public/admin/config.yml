@@ -4,7 +4,9 @@ backend:
   name: github
   repo: svenschu/talentlynx
   branch: main
-  base_url: "https://decap-proxy.simplexo.de"
+  base_url: "https://decap-proxy.simplexo.de"a
+  uth_scope: repo
+  token: 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
 
 media_folder: "/src/assets"
 public_folder: "/public"
