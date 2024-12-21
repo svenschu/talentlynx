@@ -11,16 +11,6 @@ media_folder: "/src/assets"
 public_folder: "/public"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Veröffentlichungsdatum", name: "date", widget: "datetime" }
-      - { label: "Inhalt", name: "body", widget: "markdown" }
-      - { label: "Vorschaubild", name: "cover_image", widget: "image" }
   - name: "homepage"
     label: "Homepage"
     files:
@@ -28,11 +18,81 @@ collections:
         name: "homepage"
         file: "content/homepage.md"
         fields:
-          - { label: "Hero Titel", name: "hero_title", widget: "string" }
-          - { label: "Hero Untertitel", name: "hero_subtitle", widget: "string" }
-          - label: "Bulletpoints"
-            name: "bulletpoints"
-            widget: "list"
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
             fields:
-              - { label: "Bulletpoint", name: "point", widget: "string" }
-
+              - { label: "Hero Titel", name: "hero_title", widget: "string" }
+              - { label: "Hero Untertitel", name: "hero_subtitle", widget: "string" }
+              - label: "Jobbezeichnungen"
+                name: "job_titles"
+                widget: "list"
+                fields:
+                  - { label: "Jobbezeichnung", name: "job_title", widget: "string" }
+          - label: "Features"
+            name: "features"
+            widget: "object"
+            fields:
+              - { label: "Überschrift", name: "headline", widget: "string" }
+              - label: "Boxen"
+                name: "boxes"
+                widget: "list"
+                min: 6
+                max: 6
+                fields:
+                  - { label: "Chip", name: "chip", widget: "string" }
+                  - { label: "Titel", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+          - label: "Probleme"
+            name: "problems"
+            widget: "object"
+            fields:
+              - { label: "Überschrift", name: "headline", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - label: "Liste an Problemen"
+                name: "problem_list"
+                widget: "list"
+                min: 7
+                max: 7
+                fields:
+                  - { label: "Problem", name: "problem", widget: "string" }
+          - label: "Prozess"
+            name: "process"
+            widget: "object"
+            fields:
+              - { label: "Überschrift", name: "headline", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - label: "Prozessboxen"
+                name: "process_boxes"
+                widget: "list"
+                min: 4
+                max: 4
+                fields:
+                  - { label: "Überschrift", name: "box_title", widget: "string" }
+                  - { label: "Text", name: "box_text", widget: "text" }
+          - label: "Schaubild"
+            name: "diagram"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Vergleich"
+            name: "comparison"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - label: "Boxen"
+                name: "boxes"
+                widget: "list"
+                min: 2
+                max: 2
+                fields:
+                  - { label: "Titel", name: "box_title", widget: "string" }
+                  - { label: "Text", name: "box_text", widget: "text" }
+                  - label: "Bulletpoints"
+                    name: "bulletpoints"
+                    widget: "list"
+                    min: 6
+                    max: 6
+                    fields:
+                      - { label: "Bulletpoint", name: "point", widget: "string" }
