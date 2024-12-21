@@ -1,9 +1,8 @@
-// Outputs: /builtwith.json
-export async function GET({ params, request }: any) {
-	return new Response(
-		JSON.stringify({
-			name: 'Astro',
-			url: 'https://astro.build/'
+import type { APIRoute } from 'astro';
+
+export const GET: APIRoute = ({ params, request }) => {
+	return new Response(JSON.stringify({
+			message: "This was a GET!"
 		})
-	);
+	)
 }
