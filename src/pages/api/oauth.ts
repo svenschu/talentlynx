@@ -1,3 +1,5 @@
+export const prerender = false
+
 type OAuthConfig = {
 	id: string;
 	secret: string;

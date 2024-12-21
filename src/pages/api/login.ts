@@ -1,3 +1,5 @@
+export const prerender = false
+
 import { randomBytes } from 'node:crypto';
 import { OAuthClient } from './oauth';
 
