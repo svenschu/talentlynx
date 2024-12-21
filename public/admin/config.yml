@@ -21,3 +21,18 @@ collections:
       - { label: "Veröffentlichungsdatum", name: "date", widget: "datetime" }
       - { label: "Inhalt", name: "body", widget: "markdown" }
       - { label: "Vorschaubild", name: "cover_image", widget: "image" }
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - label: "Homepage Inhalt"
+        name: "homepage"
+        file: "content/homepage.md"
+        fields:
+          - { label: "Hero Titel", name: "hero_title", widget: "string" }
+          - { label: "Hero Untertitel", name: "hero_subtitle", widget: "string" }
+          - label: "Bulletpoints"
+            name: "bulletpoints"
+            widget: "list"
+            fields:
+              - { label: "Bulletpoint", name: "point", widget: "string" }
+
