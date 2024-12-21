@@ -1,6 +1,5 @@
 export const prerender = false
 
-import { randomBytes } from 'node:crypto';
 import { OAuthClient } from './oauth';
 
 interface Env {
@@ -20,6 +19,14 @@ const createOAuth = (env: Env) => {
 	});
 };
 
+function generateRandomHex(length: number): string {
+	const array = new Uint8Array(length);
+	crypto.getRandomValues(array);
+	return Array.from(array)
+		.map(byte => byte.toString(16).padStart(2, '0'))
+		.join('');
+}
+
 const handleAuth = async (url: URL, env: Env) => {
 	const provider = url.searchParams.get('provider');
 	if (provider !== 'github') {
@@ -30,7 +37,7 @@ const handleAuth = async (url: URL, env: Env) => {
 	const authorizationUri = oauth2.authorizeURL({
 		redirect_uri: `https://${url.hostname}/callback?provider=github`,
 		scope: 'public_repo,user',
-		state: randomBytes(4).toString('hex')
+		state: generateRandomHex(4)
 	});
 
 	return new Response(null, { headers: { location: authorizationUri }, status: 301 });
