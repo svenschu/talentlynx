@@ -96,3 +96,40 @@ collections:
                     max: 6
                     fields:
                       - { label: "Bulletpoint", name: "point", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - { label: "Überschrift", name: "headline", widget: "string" }
+              - label: "Testimonial Boxen"
+                name: "testimonial_boxes"
+                widget: "list"
+                fields:
+                  - { label: "Testimonial", name: "testimonial", widget: "text" }
+                  - { label: "Person", name: "person", widget: "string" }
+                  - { label: "Berufsbezeichnung", name: "job_title", widget: "string" }
+                  - { label: "Foto", name: "photo", widget: "image" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Überschrift", name: "headline", widget: "string" }
+              - { label: "Untertitel", name: "subtitle", widget: "string" }
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - { label: "Überschrift", name: "headline", widget: "string" }
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                fields:
+                  - { label: "Frage", name: "question", widget: "string" }
+                  - { label: "Antwort", name: "answer", widget: "text" }
+          - label: "PS"
+            name: "ps_section"
+            widget: "object"
+            fields:
+              - { label: "Überschrift", name: "headline", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Zitat", name: "quote", widget: "string" }
