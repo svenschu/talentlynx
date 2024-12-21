@@ -79,15 +79,15 @@ const handleCallback = async (url: URL, env: Env) => {
 	return callbackScriptResponse('success', accessToken);
 };
 
-export async function onRequest(context: any): Promise<Response> {
-	const { request, env } = context;
-	const url = new URL(request.url);
-
-	if (url.pathname === '/auth') {
-		return handleAuth(url, env);
+export default {
+	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+		const url = new URL(request.url);
+		if (url.pathname === '/auth') {
+			return handleAuth(url, env);
+		}
+		if (url.pathname === '/callback') {
+			return handleCallback(url, env);
+		}
+		return new Response('Hello 👋');
 	}
-	if (url.pathname === '/callback') {
-		return handleCallback(url, env);
-	}
-	return new Response('Hello 👋', { status: 200 });
-}
+};
