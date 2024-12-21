@@ -1,10 +1,3 @@
-export const prerender = false;
-
-export async function GET({ params, request }: any) {
-	return new Response(
-		JSON.stringify({
-			name: 'Astro',
-			url: 'https://astro.build/'
-		})
-	);
+export async function onRequest(context: any) {
+	return new Response('Hello from Functions!');
 }
